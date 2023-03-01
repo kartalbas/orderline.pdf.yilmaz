@@ -2,7 +2,7 @@
 
 REPO_PATH="/home/yfadmin/orderline.pdf.yilmaz"
 
-# lösche alle unwichtige Dateien
+# lösche alle unwichtige xls/pdf Dateien
 find "$REPO_PATH" -type f -regextype posix-extended -regex '^.*[0-9a-fA-F]{32}\.(xls|pdf)' -exec rm {} \;
 
 # markiere alles für commit
