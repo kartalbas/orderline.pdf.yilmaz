@@ -7,7 +7,7 @@ find ~/orderline.pdf.yilmaz/ -type f -regextype posix-extended -regex '^.*[0-9a-
 git add --all
 
 # commit alle Rechnungen
-git commit -m "Rechnungen bis '%d.%m.%Y %H:%M:%S'"
+git commit -m "Rechnungen bis `date +'%d.%m.%Y %H:%M:%S'`"
 
 # push alle Rechnungen zu Github
 git push
